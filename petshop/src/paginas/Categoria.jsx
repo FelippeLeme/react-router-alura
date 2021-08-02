@@ -27,9 +27,11 @@ const Categoria = () => {
             <ul className="lista-categorias container flex">
                 {
                     subcategorias.map((subcategoria) => {
+                        return( 
                         <li className={`lista-categorias__categoria lista-categroias__categoria--${id}`} key={subcategoria}>
                             <Link to={`${url}/${subcategoria}`}>{subcategoria}</Link>
                         </li>
+                        )
                     })
                 }
 
